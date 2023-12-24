@@ -1,0 +1,12 @@
+pip install Flask
+pip install Flask-SQlAlchemy
+pip install Flask-Migrate
+pip install Flask-Login
+pip install selenium
+pip install pandas openpyxl
+
+
+curl \
+-H 'Content-Type: application/json' \
+-d '{"contents":[{"parts":[{"text":"Write a story about a magic backpack"}]}]}' \
+-X POST https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyA0gcVAJgUKC9TZXPZJ_hIT7LD2QV9-Zxc

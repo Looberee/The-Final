@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Playlists</title>
+</head>
+<body>
+    <h1>User Playlists</h1>
+    <ul>
+        {% for playlist in playlists['items'] %}
+            <li>
+                <strong>Name:</strong> {{ playlist['name'] }}<br>
+                <strong>ID:</strong> {{ playlist['id'] }}<br>
+                <strong>Owner:</strong> {{ playlist['owner']['display_name'] }}<br>
+                <strong>Tracks:</strong> {{ playlist['tracks']['total'] }}<br>
+                <strong>Link:</strong> <a href="{{ playlist['external_urls']['spotify'] }}" target="_blank">{{ playlist['external_urls']['spotify'] }}</a>
+            </li>
+            <br>
+        {% endfor %}
+    </ul>
+</body>
+</html>

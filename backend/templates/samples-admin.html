@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Admin</title>
+</head>
+<body>
+    <h1>Admin</h1>
+    <ul>
+        {% for admin in admins %}
+            <li>{{admin.id}} - {{ admin.name }} - {{ admin.email }} - {{ admin.username }} - {{ admin.password}} - {{admin.company}}</li>
+        {% endfor %}
+    </ul>
+    <h1>Admin Count: {{admins|length}}</h1>
+</body>
+</html>
