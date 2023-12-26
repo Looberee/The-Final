@@ -268,7 +268,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Sidebar ======= -->
-  <aside id="sidebar" class="sidebar">
+<aside id="sidebar" class="sidebar">
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
@@ -301,7 +301,14 @@
     </li><!-- End Login Page Nav -->
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="{{url_for('admin_login')}}">
+        <i class="fa-solid fa-gear"></i>
+        <span>Settings</span>
+        </a>
+    </li><!-- End Login Page Nav -->
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="{{url_for('admin_logout')}}">
         <i class="fa-solid fa-right-from-bracket"></i>
         <span>Logout</span>
         </a>
@@ -316,8 +323,14 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" href="#">
-            <i class="fa-solid fa-user-lock"></i><span>User Data</span>
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" href="{{url_for('show_user_data')}}">
+        <i class="fa-solid fa-user-lock"></i><span>User Data</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" href="{{url_for('show_admin_data')}}">
+        <i class="fa-solid fa-user-shield"></i><span>Admin Data</span>
         </a>
     </li>
 
@@ -325,6 +338,13 @@
         <a class="nav-link collapsed" href="{{url_for('show_customer_contact')}}">
         <i class="fa-solid fa-inbox"></i>
         <span>Contact From Users</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="{{url_for('show_customer_contact')}}">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
         </a>
     </li><!-- End Contact Page Nav -->
 
@@ -337,7 +357,7 @@
 
     </ul>
 
-</aside><!-- End Sidebar-->
+</aside>
 
   <main id="main" class="main">
 

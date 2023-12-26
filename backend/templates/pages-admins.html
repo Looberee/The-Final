@@ -367,7 +367,14 @@
     </li><!-- End Login Page Nav -->
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="{{url_for('admin_login')}}">
+        <i class="fa-solid fa-gear"></i>
+        <span>Settings</span>
+        </a>
+    </li><!-- End Login Page Nav -->
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="{{url_for('admin_logout')}}">
         <i class="fa-solid fa-right-from-bracket"></i>
         <span>Logout</span>
         </a>
@@ -398,6 +405,13 @@
         <i class="fa-solid fa-inbox"></i>
         <span>Contact From Users</span>
         </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="{{url_for('show_customer_contact')}}">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+        </a>
     </li><!-- End Contact Page Nav -->
 
     <li class="nav-item">
@@ -409,8 +423,7 @@
 
     </ul>
 
-</aside><!-- End Sidebar-->
-
+</aside>
 <main id="main" class="main">
 
     <div class="pagetitle">

@@ -20,6 +20,8 @@ from spotipy.oauth2 import SpotifyOAuth
 
 app_admin = Flask(__name__)
 
+# config section
+
 client_id = 'f8eb39f738654c94945537405e6ebad1'
 client_secret = '27e1646b17d24a32b34cfaf6504a84b1'
 redirect_uri = 'http://localhost:5000/admin/callback'
@@ -57,7 +59,7 @@ with app_admin.app_context():
         db.session.commit()
         
         
-app_admin.wsgi_app = ProfilerMiddleware(app_admin.wsgi_app, profile_dir='./server_status')
+# app_admin.wsgi_app = ProfilerMiddleware(app_admin.wsgi_app, profile_dir='./server_status')
 
 @app_admin.route('/')
 def index():

@@ -367,6 +367,13 @@
     </li><!-- End Login Page Nav -->
 
     <li class="nav-item">
+        <a class="nav-link collapsed" href="{{url_for('admin_login')}}">
+        <i class="fa-solid fa-gear"></i>
+        <span>Settings</span>
+        </a>
+    </li><!-- End Login Page Nav -->
+
+    <li class="nav-item">
         <a class="nav-link collapsed" href="{{url_for('admin_logout')}}">
         <i class="fa-solid fa-right-from-bracket"></i>
         <span>Logout</span>
@@ -402,15 +409,15 @@
 
     <li class="nav-item">
         <a class="nav-link collapsed" href="{{url_for('show_customer_contact')}}">
-        <i class="fa-solid fa-inbox"></i>
-        <span>Contact To Users</span>
+        <i class="fa-solid fa-envelope"></i>
+        <span>Mail To Admins</span>
         </a>
     </li><!-- End Contact Page Nav -->
 
     <li class="nav-item">
         <a class="nav-link collapsed" href="#">
         <i class="fa-solid fa-wallet"></i>
-        <span>Budgets</span>
+        <span>Budgets </span>
         </a>
     </li><!-- End Budget Nav -->
 
